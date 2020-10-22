@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LobbySystem</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="titulo">LobbySystem</h1>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Reservas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Documento Pessoal</th>
+                        <th>Reserva</th>
+                        <th>Tipo de Quarto</th>
+                        <th>Nº</th>
+                        <th>Check-In</th>
+                        <th>Check-Out</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="info-nome">Jorge da Silva</th>
+                        <th class="info-documento">116.439.430-49</th>
+                        <th class="info-reserva">15801271.2438</th>
+                        <th class="info-quarto">Solteiro Simples</th>
+                        <th class="info-numero">12</th>
+                        <th class="info-checkin">22/10</th>
+                        <th class="info-checkout">24/10</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="container">
+            <h3>Adicionar novo hóspede</h3>
+            <form action="" id="form-adiciona">
+                <div class="dados">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" class="campo" placeholder="digite o nome do hóspede">
+                </div>
+                <div class="dados">
+                    <label for="documento">Documento Pessoal:</label>
+                    <input type="text" id="documento" name="documento" class="campo"
+                        placeholder="digite o RG, CPF ou CNH">
+                </div>
+                <div class="dados">
+                    <label for="quarto">Tipo de Quarto:</label>
+                    <select name="quarto" id="quarto">
+                        <option value="single">Solteiro Simples</option>
+                        <option value="single">Solteiro Duplo</option>
+                        <option value="double">Casal Simples</option>
+                        <option value="double">Casal Duplo</option>
+                    </select>
+                </div>
+                <div class="dados">
+                    <label for="numero">Nº do Quarto:</label>
+                    <input type="number" id="numero" name="numero" class="campo" placeholder="">
+                </div>
+                <div class="dados">
+                    <label for="checkin">Data de Check-In:</label>
+                    <input type="date" id="checkin" name="checkin" class="campo">
+                </div>
+                <div class="dados">
+                    <label for="checkout">Data de Check-Out:</label>
+                    <input type="date" id="checkout" name="checkout" class="campo">
+                </div>
+                <button id="adicionar-hospede" class="botao">Adicionar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="" alt="" class="imgLogo">
+        <p class="copyright"><a href="https://github.com/alves-a">&copy;LobbySystem - 2020</a></p>
+    </footer>
+    <script src="./js/calcula-imc.js"></script>
+</body>
+
+</html>
