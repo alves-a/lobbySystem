@@ -6,6 +6,7 @@ botaoAdiciona.addEventListener('click', function (event) {
     
     var formulario = document.querySelector("#form-adiciona");
     var hospede = obtemHospedeDoFormulario(formulario);
+
     var erros = verificaErrosNoFormulario(hospede);
 
     if (erros.length > 0) {
