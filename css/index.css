@@ -11,7 +11,9 @@ header {
 }
 
 h1 {
+    font-size: 24px;
     color: #F2F2F2;
+    margin-bottom: 0;
 }
 
 main {
@@ -25,7 +27,13 @@ main {
     margin: 0 auto;
 }
 
+/* DADOS DA TABELA */
+.container-reservas {
+    border-bottom: 1px solid #000;
+}
+
 h2, h3 {
+    font-size: 20px;
     font-weight: bolder;
     text-align: center;
     padding: 1em 0;
@@ -50,11 +58,37 @@ th{
 	background-color: #40372F;
 }
 
-.container-reservas {
-    border-bottom: 1px solid #000;
+/* DADOS DE CADASTRO */
+.dados {
+    margin: 1em;
+}
+
+input, select, button {
+    padding: .5em;
+}
+
+input {
+    width: 50%;
+}
+
+.dados-quarto, .dados-check {
+    display: inline-block;
+    width: 45%;
+}
+
+.botao {
+    width: 20%;
+    margin: 0 auto 1em;
+    display: block;
+    text-align: center;
 }
 
 footer {
+    /*
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    */
     text-align: center;
     height: 100px;
 
