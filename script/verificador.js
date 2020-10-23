@@ -1,0 +1,25 @@
+/* script verifica se existe erros antes dos dados do formulário de novo hóspede serem adicionados na tabela */
+
+function verificaErrosNoFormulario(dadosCadastrados) {
+    var erros = [];
+
+    if (dadosCadastrados.nome.length == 0) {
+        erros.push("O nome não pode ser em branco");
+    }
+
+    if (dadosCadastrados.documento.length == 0) {
+        erros.push("O documento não pode ser em branco");
+    }
+
+    if (dadosCadastrados.numero.length == 0) {
+        erros.push("O número não pode ser em branco");
+    }
+
+    return erros;
+}
+
+function exibeMensagensDeErro(erros) {
+    erros.forEach(erroAtual => {
+        console.log(erroAtual);
+    });
+}

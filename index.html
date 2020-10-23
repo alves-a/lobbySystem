@@ -30,8 +30,8 @@
                         <th>Check-Out</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
+                <tbody id="tabela-hospedes">
+                    <tr class="hospede">
                         <td class="info-nome">Jorge da Silva</td>
                         <td class="info-documento">116.439.430-49</td>
                         <td class="info-reserva">15801271.2438</td>
@@ -40,7 +40,7 @@
                         <td class="info-checkin">22/10/2020</td>
                         <td class="info-checkout">24/10/2020</td>
                     </tr>
-                    <tr>
+                    <tr class="hospede">
                         <td class="info-nome">Cristiane Lívia Gabriela Barbosa</td>
                         <td class="info-documento">28.318.497-8</td>
                         <td class="info-reserva">11161787.5042</td>
@@ -49,7 +49,7 @@
                         <td class="info-checkin">23/10/2020</td>
                         <td class="info-checkout">27/10/2020</td>
                     </tr>
-                    <tr>
+                    <tr class="hospede">
                         <td class="info-nome">Francisco Isaac Fogaça</td>
                         <td class="info-documento">951.770.491-75</td>
                         <td class="info-reserva">12476628.1196</td>
@@ -76,10 +76,10 @@
                 <div class="dados dados-quarto">
                     <label for="quarto">Tipo de Quarto:</label>
                     <select name="quarto" id="quarto">
-                        <option value="single">Solteiro Simples</option>
-                        <option value="single">Solteiro Duplo</option>
-                        <option value="double">Casal Simples</option>
-                        <option value="double">Casal Duplo</option>
+                        <option>Solteiro Simples</option>
+                        <option>Solteiro Duplo</option>
+                        <option>Casal Simples</option>
+                        <option>Casal Duplo</option>
                     </select>
                 </div><div class="dados dados-quarto">
                     <label for="numero">Nº do Quarto:</label>
@@ -100,7 +100,9 @@
         <img src="" alt="" class="imgLogo">
         <p class="copyright"><a href="https://github.com/alves-a">&copy;LobbySystem - 2020</a></p>
     </footer>
-    <script src="./js/calcula-imc.js"></script>
+    <script src="./script/verificador.js"></script>
+    <script src="./script/formulario.js"></script>
+    <script src="./script/tabela.js"></script>
 </body>
 
 </html>
