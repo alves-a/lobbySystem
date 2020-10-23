@@ -1,9 +1,8 @@
 body {
-    background: linear-gradient(90deg, #73685C, #BF8773, #73685C);
+    background: linear-gradient(90deg, #E1D4BD, #EFE8DC, #E1D4BD);
 }
 
 header {
-    width: 100vw;
     height: 180px;
     background-image: url("https://images.pexels.com/photos/3771811/pexels-photo-3771811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-repeat: no-repeat;
@@ -18,9 +17,7 @@ h1 {
 main {
     width: 940px;
     margin: 0 auto;
-    border: solid #40372F;
     border-width: 0 1px;
-    background: linear-gradient(90deg, #D9C6B0, #F2E0D5, #D9C6B0);
 }
 
 .container {
@@ -28,32 +25,42 @@ main {
     margin: 0 auto;
 }
 
-h2 {
+h2, h3 {
+    font-weight: bolder;
     text-align: center;
-    padding: 15px 0;
+    padding: 1em 0;
 }
 
 table {
     background-color: #F2F2F2;
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
     table-layout: fixed;
+
 }
 
-td, th {
-	padding: .7em;
-	margin: 0;
-	border: 1px solid #ccc;
-	text-align: center;
+th, td {
+    padding: .5em;
+    border: 1px solid #000;
+    text-align: center;
 }
 
 th{
-	font-weight: bold;
-	background-color: #EEE;
+    font-weight: bold;
+    color: #F2F2F2;
+	background-color: #40372F;
+}
+
+.container-reservas {
+    border-bottom: 1px solid #000;
 }
 
 footer {
     text-align: center;
-    width: 100vw;
     height: 100px;
-    background-color: #262523;
+
+    background-image: url("https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto 100px;
+    background-color:  #40372F;
 }
