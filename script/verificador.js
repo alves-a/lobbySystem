@@ -1,4 +1,4 @@
-/* script verifica se existe erros antes dos dados do formulário de novo hóspede serem adicionados na tabela */
+/* verifica se existe erros antes dos dados do formulário de novo hóspede serem adicionados na tabela */
 
 function verificaErrosNoFormulario(dadosCadastrados) {
     var erros = [];

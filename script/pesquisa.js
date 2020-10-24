@@ -1,4 +1,4 @@
-/* script com função de busca específica de um hóspede na tabela */
+/* função de busca específica de um hóspede na tabela */
 
 var pesquisa = document.querySelector("#buscador-tabela");
 

@@ -1,4 +1,4 @@
-/* script encarregado de montar uma nova linha e as colunas com os dados cadastrados no formulário, também organiza as datas de Check-In e Check-Out no formato dd/mm/aaaa */
+/* encarregado de montar uma nova linha e as colunas com os dados cadastrados no formulário, também organiza as datas de Check-In e Check-Out no formato dd/mm/aaaa */
 
 function montaTd(dadosCadastrados, classe) {
     var td = document.createElement("TD");

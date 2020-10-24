@@ -1,4 +1,4 @@
-/* script que busca no banco de dados todos hóspedes que fizeram reserva online e adiciona na tabela */
+/* busca no banco de dados todos hóspedes que fizeram reserva online e adiciona na tabela */
 
 var botaoBuscar = document.querySelector("#cadastros-online");
 botaoBuscar.addEventListener("click", function () {

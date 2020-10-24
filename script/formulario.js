@@ -1,4 +1,4 @@
-/* script que pega os valores inseridos no formulário de novo hóspede e adiciona na tabela com um número de reserva gerado automaticamente */
+/* pega os valores inseridos no formulário de novo hóspede e adiciona na tabela com um número de reserva gerado automaticamente */
 
 var botaoAdiciona = document.querySelector('#adicionar-hospede');
 botaoAdiciona.addEventListener('click', function (event) {
