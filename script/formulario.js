@@ -38,3 +38,16 @@ function geraReserva() {
     var reservaGerada = oitoDigitos + "." + quatroDigitos;
     return reservaGerada;
 }
+
+/* mostrar e esconder o formulário de cadastro de novo hóspede */
+
+var botaoVisualizar = document.querySelector('#visualizar');
+botaoVisualizar.addEventListener("click", function() {
+    var mostraFormulario = document.querySelector("#formulario").style.display;
+
+    if(mostraFormulario == "none") {
+        document.querySelector("#formulario").style.display = 'block';
+    } else {
+        document.querySelector("#formulario").style.display = 'none';
+    }
+});
