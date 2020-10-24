@@ -39,7 +39,6 @@ table {
     background-color: #F2F2F2;
     margin: 0 auto 1em auto;
     table-layout: fixed;
-
 }
 
 th, td {
@@ -97,4 +96,9 @@ footer {
     background-position: bottom left;
     background-size: auto 100px;
     background-color:  #40372F;
+}
+
+/* eventos JS */
+.invisivel {
+    display: none;
 }
