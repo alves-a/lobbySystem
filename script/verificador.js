@@ -12,7 +12,7 @@ function verificaErrosNoFormulario(dadosCadastrados) {
     }
 
     if (dadosCadastrados.numero.length == 0) {
-        erros.push("O número não pode ser em branco");
+        erros.push("O número do quarto não pode ser em branco");
     }
     
     if (!validaData(dadosCadastrados.checkin, dadosCadastrados.checkout)) {
@@ -23,8 +23,14 @@ function verificaErrosNoFormulario(dadosCadastrados) {
 }
 
 function exibeMensagensDeErro(erros) {
+    var ul = document.querySelector("#mensagens-erro");
+    ul.innerHTML = "";
+
     erros.forEach(erroAtual => {
-        console.log(erroAtual);
+        //console.log(erroAtual);
+        var li = document.createElement("li");
+        li.textContent = erroAtual;
+        ul.appendChild(li);
     });
 }
 
@@ -33,10 +39,10 @@ function validaData(checkin, checkout) {
     var dataFinal = new Date(checkout);
 
     if (dataInicial <= dataFinal) {
-        alert("Data correta!");
+        //alert("Data correta!");
         return true;
     } else {
-        alert("Data incorreta!");
+        //alert("Data incorreta!");
         return false;
     }
 }

@@ -16,6 +16,7 @@ botaoAdiciona.addEventListener('click', function (event) {
 
     adicionaHospedeNaTabela(hospede);
     formulario.reset();
+    document.querySelector("#mensagens-erro").innerHTML = "";
 });
 
 function obtemHospedeDoFormulario(cadastroHospede) {
