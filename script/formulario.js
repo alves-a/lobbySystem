@@ -46,8 +46,10 @@ botaoVisualizar.addEventListener("click", function() {
     var mostraFormulario = document.querySelector("#formulario").style.display;
 
     if(mostraFormulario == "none") {
+        botaoVisualizar.textContent = "Esconder formulário";
         document.querySelector("#formulario").style.display = 'block';
     } else {
+        botaoVisualizar.textContent = "Visualizar formulário";
         document.querySelector("#formulario").style.display = 'none';
     }
 });
