@@ -10,11 +10,13 @@
 </head>
 
 <body>
+    
     <header>
         <div class="container-titulo">
             <h1 class="titulo">LobbySystem</h1>
         </div>
     </header>
+    
     <main>
         <button id="visualizar" class="botao">Esconder formulário</button>
         <section id="formulario" class="container container-adiciona">
@@ -37,16 +39,13 @@
                         <option>Casal Simples</option>
                         <option>Casal Duplo</option>
                     </select>
-                </div>
-                <div class="dados dados-quarto">
-                    <label for="numero">Nº do Quarto:</label>
+                </div><div class="dados dados-quarto">
+                    <label for="numero">Número do Quarto:</label>
                     <input type="number" id="numero" name="numero" class="campo" placeholder="">
-                </div>
-                <div class="dados dados-check">
+                </div><div class="dados dados-check">
                     <label for="checkin">Data de Check-In:</label>
                     <input type="date" id="checkin" name="checkin" class="campo">
-                </div>
-                <div class="dados dados-check">
+                </div><div class="dados dados-check">
                     <label for="checkout">Data de Check-Out:</label>
                     <input type="date" id="checkout" name="checkout" class="campo">
                 </div>
@@ -56,8 +55,9 @@
         </section>
         <section class="container container-reservas">
             <h2>Reservas</h2>
-            <label for="buscador">Busca:</label>
-            <input type="text" id="buscador-tabela" name="buscador" placeholder="procurar por hóspede">
+            <div class="container-buscador">
+                <label for="buscador" class="buscador-label">Busca:</label><input type="text" id="buscador-tabela" name="buscador" placeholder="procurar por hóspede">
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -65,7 +65,7 @@
                         <th>Documento Pessoal</th>
                         <th>Reserva</th>
                         <th>Tipo de Quarto</th>
-                        <th>Nº</th>
+                        <th>Número do Quarto</th>
                         <th>Check-In</th>
                         <th>Check-Out</th>
                     </tr>
@@ -100,14 +100,16 @@
                     </tr>
                 </tbody>
             </table>
-            <button id="cadastros-online">Reservas Online</button>
+            <button id="cadastros-online" class="botao">Reservas Online</button>
             <span id="erro-ajax" class="invisivel">Erro no banco de dados ao buscar as reservas feitas online</span>
         </section>
     </main>
+
     <footer>
-        <img src="" alt="" class="imgLogo">
-        <p class="copyright"><a href="https://github.com/alves-a">&copy;LobbySystem - 2020</a></p>
+        <p class="copyright"><a href="https://github.com/alves-a/lobbySystem">&copy;LobbySystem - 2020</a></p>
+        <p class="copyright"><a href="https://github.com/alves-a">created by Afonso Alves</a></p>
     </footer>
+
     <script src="./script/reservas-online.js"></script>
     <script src="./script/verificador.js"></script>
     <script src="./script/formulario.js"></script>
