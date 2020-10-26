@@ -59,7 +59,7 @@ main {
 h2 {
     font-size: 20px;
     font-weight: bolder;
-    margin: 0 0 1em 1em;
+    margin: 0 0 1em 0;
 }
 
 #form-adiciona {
@@ -95,15 +95,7 @@ input, select, button {
     width: 50%;
 }
 
-#mensagens-erro li {
-    color: red;
-    font-weight: bolder;
-    list-style-type: "\274C";
-    margin-bottom: .2em;
-}
-
 /* DADOS DA TABELA */
-
 .container-buscador {
     display: flex;
     margin-bottom: .7em;
@@ -136,17 +128,13 @@ th, td {
     vertical-align: middle;
 }
 
+
+/* RODAPÉ */
 footer {
     width: 100%;
-    height: 100px;
-    
-    text-align: center;
+    text-align: right;
     background-color:  #40372F;
-
-    background-image: url("https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-size: auto 100px;
-    background-repeat: no-repeat;
-    background-position: right;
+    padding: 2em 0;
 }
 
 footer p {
@@ -167,4 +155,11 @@ footer a{
 .fadeOut {
     opacity: 0;
     transition: 0.5s;
+}
+
+#mensagens-erro li {
+    color: red;
+    font-weight: bolder;
+    list-style-type: "\274C";
+    margin-bottom: .2em;
 }
